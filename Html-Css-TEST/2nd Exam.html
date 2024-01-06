@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="media.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-around; 
+            /* gap: 20px;            */
+            align-items: center;
+            background-color: rgba(13, 12, 12, 0.849);
+            color: white;
+            min-height: 100px;
+            
+        }
+        ul{
+            display: flex;
+            gap: 20px;
+            list-style-type: none;
+            color: white;
+            font-size: larger;
+        }
+        ul>li:hover{
+            color: green;
+        }
+        .sign-up{
+            background-color: rgba(0, 0, 0, 0.063);
+            color: green;
+            border: 2px solid green;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .sign-up:hover{
+            background-color: green;
+            color:white;
+        }
+        .btn{
+            background-color: green;
+            color: white;
+            border: 2px solid black;
+            padding: 10px 25px;
+            border-radius: 10px;
+        }
+        .btn:hover{
+            transition: 1s  ease-in-out;
+            background-color:transparent;
+            border: 2px solid green;
+            cursor: pointer;
+        }
+        span{
+            color: green;
+        }
+        .span1{
+            background-color: green;
+            color: white;
+        }
+        .Hero,.simple,.Finances{
+            display: flex;
+            /* flex-wrap: wrap; */
+            background-color: black;
+            min-height: 500px;
+            color: white;
+
+        }
+        .Customers,.Container{
+            display: flex;
+            flex-direction: column;
+            /* line-height: 2; */
+            background-color: black;
+            min-height: 500px;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .Last{
+            background-color: black;
+            min-height: 500px;
+            color: white;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            font-family:'Times New Roman', Times, serif;
+            
+        }
+        .Customers>p{
+            text-align: center;
+            width: 500px;
+        }
+        .blank{
+            flex: 1;
+            background: linear-gradient(35deg, rgba(76, 75, 75, 0.678),rgba(12, 12, 12, 0.695));
+        }
+        .blank2{
+            flex: 1;
+        }
+        .hero-text{
+            flex: 1;
+            transform:translateY(20%);
+            font-size: 2rem;
+            color: rgb(252, 252, 252);
+            text-align: left; 
+            font-family:'Times New Roman', Times, serif;
+        }
+        .hero-text>p{
+            font-size: small;
+            line-height: 2;
+        }
+       
+
+        .simple-text,.finances-text{
+            flex: 1;
+            /* transform: translateX(55px); */
+            transform: translateY(10%);
+            font-family:'Times New Roman', Times, serif;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-self:center;
+        }
+        .simple-text>h1,.finances-text>h1,.Customers>h1{
+            font-size: 4rem;
+            color: rgb(252, 252, 252);
+        }
+
+        .simple-text>p ,.finances-text>p{
+            font-size: medium;
+
+        }
+        .simple-img,.finances-img{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .Subscribe{
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+        }
+        .card{
+            background-color: rgba(37, 37, 37, 0.671);
+            border: 2px solid rgba(128, 128, 128, 0.637);
+            width: 370px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card>img{
+            border: 3px solid green;
+            border-radius: 100%;
+        }
+        .footer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .col{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .col>ul{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .col>.bank-logo{
+            font-size: 2.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h2>Bankz</h2>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Feature</li>
+        </ul>
+        <button class="sign-up">Sign-Up</button>
+        <button class="btn">Login</button>
+    </div>
+
+    <div class="Hero">
+        <div class="blank"></div>
+        <div class="blank2"></div>
+        <div class="hero-text">
+            <h1>Bussiness <br> Account With <br>Mastercard</h1>
+            <p>We're here to help organize and pland your <br> finances for a better <span>Feature</span></p>
+        </div>
+    </div>
+
+    <div class="simple">
+        <div class="simple-text">
+            <h1>Simple <br><span class="span1">Registration</span></h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisic<br>ing elit. Tenetur eveniet corporis,sapiente aliquid aut.</p>
+        </div>
+        <div class="simple-img">
+            <img src="image/pexels-sathesh-d-698808.jpg" alt="" width="450px" height="400">
+        </div>
+    </div>
+
+    <div class="Finances">
+
+        <div class="finances-img">
+            <img src="image/pexels-karolina-grabowska-4386406.jpg" alt="" width="500px" height="400">
+        </div>
+
+        <div class="finances-text">
+            <h1>Finances <br><span class="span1">Management</span></h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adip<br>isicing elit. Tenetur eveniet corporis,sapiente aliquid aut.</p>
+        </div>
+    </div>
+    <div class="Subscribe">
+        <input type="email" name="email" id="email" placeholder="Enter Your Email">
+        <button class="btn"> Subscribe</button>
+    </div>
+
+    <div class="Customers">
+        <h1>What Our <span>Customers</span>  Say</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minima quo inventore pariatur amet est culpa exercitationem eum iste distinctio ratione, doloremque placeat quisquam itaque voluptatem neque, as</p>
+    </div>
+
+    <div class="Container">
+        <div class="cards">
+            <div class="card">
+                <img src="image/placeholder-person.png" alt="" width="100px" height="100px">
+                <h2>Alex Doe</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis cum illo ex perferendis repellendus assumenda, eius repellat sint vero reprehenderit hic unde voluptates deserunt nam harum nobis alias ducimus excepturi.</p>
+
+                <small><span>Learn More</span></small>
+                <!-- <h3>_________</h3> -->
+            </div>
+
+            <div class="card">
+                <img src="image/placeholder-person.png" alt="" width="100px" height="100px">
+                <h2>Alex Doe</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis cum illo ex perferendis repellendus assumenda, eius repellat sint vero reprehenderit hic unde voluptates deserunt nam harum nobis alias ducimus excepturi.</p>
+
+                <small><span>Learn More</span></small>
+                <!-- <h3>_________</h3> -->
+            </div>
+
+            <div class="card">
+                <img src="image/placeholder-person.png" alt="" width="100px" height="100px">
+                <h2>Alex Doe</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis cum illo ex perferendis repellendus assumenda, eius repellat sint vero reprehenderit hic unde voluptates deserunt nam harum nobis alias ducimus excepturi.</p>
+
+                <small><span>Learn More</span></small>
+                <!-- <h3>_________</h3> -->
+            </div>
+
+            <div class="card">
+                <img src="image/placeholder-person.png" alt="" width="100px" height="100px">
+                <h2>Alex Doe</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis cum illo ex perferendis repellendus assumenda, eius repellat sint vero reprehenderit hic unde voluptates deserunt nam harum nobis alias ducimus excepturi.</p>
+
+                <small><span>Learn More</span></small>
+                <!-- <h3>_________</h3> -->
+            </div>
+
+            <div class="card">
+                <img src="image/placeholder-person.png" alt="" width="100px" height="100px">
+                <h2>Alex Doe</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis cum illo ex perferendis repellendus assumenda, eius repellat sint vero reprehenderit hic unde voluptates deserunt nam harum nobis alias ducimus excepturi.</p>
+
+
+
+                <small><span>Learn More</span></small>
+                <!-- <h3>_________</h3> -->
+            </div>
+
+            <div class="card">
+                <img src="image/placeholder-person.png" alt="" width="100px" height="100px">
+                <h2>Alex Doe</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis cum illo ex perferendis repellendus assumenda, eius repellat sint vero reprehenderit hic unde voluptates deserunt nam harum nobis alias ducimus excepturi.</p>
+
+                <small><span>Learn More</span></small>
+                <!-- <h3>_________</h3> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="Last">
+        <div class="footer">
+            <div class="col">
+                <h1 class="bank-logo">Bank <span>Logo</span></h1>
+                <small><br>  Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Harum laboriosam est omnis temporib Lor<br>em ipsum, dolor sit amet consectetur adipisicing elit. Ut, dolorum.</small>
+            </div>
+            
+            <div class="col">
+                <h1>Menu</h1>
+                <ul>
+                    <br><br>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Feature</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Company</h1>
+
+                <ul>
+                    <br><br>
+                    <li>Management</li>
+                    <li>Our Story</li>
+                    <li>Customer</li>
+                    <li>Partnership</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Support</h1>
+
+                <ul>
+                    <br><br>
+                    <li>Customer Support</li>
+                    <li>Transaction</li>
+                    <li>Privacy Policy</li>
+                    <li>Contect Us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
